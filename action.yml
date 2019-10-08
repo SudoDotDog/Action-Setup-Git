@@ -1,0 +1,9 @@
+name: "Setup Git"
+description: "Setup Git Authentication Information"
+inputs:
+  username:
+    description: "Git Username"
+  email:
+    description: "Git Email"
+runs:
+  # plugin: "checkout"
