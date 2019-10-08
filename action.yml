@@ -6,4 +6,8 @@ inputs:
   email:
     description: "Git Email"
 runs:
-  # plugin: "checkout"
+  using: "docker"
+  image: "Dockerfile"
+  args:
+    - ${{ inputs.username }}
+    - ${{ inputs.email }}
